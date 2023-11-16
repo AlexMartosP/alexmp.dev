@@ -21,7 +21,7 @@ export default function OpenGraph({ pageName }: { pageName: string }) {
             borderRadius: "50vh",
           }}
         ></div>
-        <span>Softare Developer</span>
+        <span>Software Developer</span>
         <div
           style={{
             width: 5,

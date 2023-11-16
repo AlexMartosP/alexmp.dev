@@ -27,6 +27,7 @@ const openSansOne = localFont({
 export const metadata: Metadata = {
   title: "Alexander MP",
   description: "Software Developer",
+  metadataBase: new URL(process.env.HOST_URL as string),
 };
 
 export default function RootLayout({
