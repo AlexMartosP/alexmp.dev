@@ -2,7 +2,6 @@ import { getPostBySlug } from "@/lib/blog";
 import { allPosts } from "contentlayer/generated";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { headers } from "next/headers";
 
 export function generateMetadata({
   params,
@@ -10,7 +9,6 @@ export function generateMetadata({
   params: { slug: string };
 }): Metadata {
   const post = getPostBySlug(params.slug);
-  console.log("in generateMeta data", params.slug);
 
   if (!post) {
     return notFound();
@@ -21,14 +19,12 @@ export function generateMetadata({
     description: post.description,
     openGraph: {
       title: post.title,
-      url: post.url,
     },
   };
 }
 
 export default function Blog({ params }: { params: { slug: string } }) {
   const post = getPostBySlug(params.slug);
-  console.log("in render post", params.slug);
 
   if (!post) {
     return notFound();
@@ -44,7 +40,6 @@ export default function Blog({ params }: { params: { slug: string } }) {
 }
 
 export function generateStaticParams() {
-  console.log("in generateStaticParams");
   const posts = allPosts;
 
   return posts.map((post) => ({ slug: post._raw.flattenedPath }));

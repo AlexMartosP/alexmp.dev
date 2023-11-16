@@ -3,7 +3,7 @@ import { getFonts } from "@/lib/getFonts";
 import { notFound } from "next/navigation";
 import { ImageResponse } from "next/og";
 
-export const alt = "About Acme";
+export const alt = "Blog post";
 export const size = {
   width: 1200,
   height: 630,
@@ -12,7 +12,6 @@ export const contentType = "image/png";
 export const runtime = "edge";
 
 export default async function Image({ params }: { params: { slug: string } }) {
-  console.log("in Image");
   const post = getPostBySlug(params.slug);
 
   if (!post) {
