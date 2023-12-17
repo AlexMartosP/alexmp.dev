@@ -10,10 +10,10 @@ const navigationStructure: NavItem[] = [
     label: "Home",
     link: "/",
   },
-  // {
-  //   label: "Blog",
-  //   link: "/blog",
-  // },
+  {
+    label: "Blog",
+    link: "/blog",
+  },
   {
     label: "About",
     link: "/about",

@@ -34,7 +34,10 @@ export default function Blog({ params }: { params: { slug: string } }) {
     <div className="sm:w-3/6 sm:mx-auto">
       <h1 className="mt-24 text-4xl font-semibold">{post.title}</h1>
       <div className="py-2" />
-      <div dangerouslySetInnerHTML={{ __html: post.body.html }} />
+      <div
+        className="prose"
+        dangerouslySetInnerHTML={{ __html: post.body.html }}
+      />
     </div>
   );
 }
