@@ -27,11 +27,10 @@ export default function Home() {
           </h1>
         </div>
         <p className="mt-4">
-          I'm a 19-year-old with passion about learning and working with new
-          technologies to build applications. I'm driven by problem-solving, new
-          challenges and building quality user experiences. I have experience
-          with technologies such as Javascript, Typescript, React, Node,
-          Express, NextJS, GraphQL and C#.
+          I'm a Software Developer from Sweden with a great passion for learning
+          and working with new technologies to build developer tools and
+          applications. I'm driven by problem-solving, taking on new challenges
+          and creating high-quality user experiences.
         </p>
         <div className="flex gap-4 mt-6">
           <Link
