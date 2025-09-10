@@ -34,7 +34,7 @@ export default function Home() {
         </p>
         <div className="flex gap-4 mt-6">
           <Link
-            href="https://www.linkedin.com/in/alexander-martos-paschoal/"
+            href="https://www.linkedin.com/in/alexmartosp/"
             className="inline-block p-2.5 bg-gray-100 rounded-xl hover:bg-[#0077b5] hover:text-[#fff]"
             target="_blank"
           >
